@@ -18,13 +18,12 @@ public class Task3 {
                 String[] s = bufferedReader.readLine().split(" ");
                 int num1 = Integer.parseInt(s[0]);
                 int num2 = Integer.parseInt(s[1]);
+                count--;
                 if (num2==0) {
                     System.out.println("Деление на 0");
+                    continue;
                 }
-                else {
-                    System.out.println((double)num1/(double)num2);
-                }
-                count--;
+                System.out.println((double)num1/(double)num2);
             }
 
         }
