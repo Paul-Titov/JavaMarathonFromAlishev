@@ -40,11 +40,11 @@ public class Airplane {
     }
 
     public void info() {
-        System.out.println("Изготовитель: "+producer+", год выпуска: "+year+", длина: "+length+", вес: "+weight+", количество топлива в баке: "+fuel);
+        System.out.println("Изготовитель: " + producer + ", год выпуска: " + year + ", длина: " + length + ", вес: " + weight + ", количество топлива в баке: " + fuel);
     }
 
     public void fillUp(int n) {
-        fuel=fuel+n;
+        fuel = fuel + n;
     }
 
     public static void compareAirplanes(Airplane airplane, Airplane otherAirplane) {
@@ -53,7 +53,7 @@ public class Airplane {
         } else if (airplane.length > otherAirplane.length) {
             System.out.println("Первый самолет длиннее");
         } else {
-        System.out.println("Длины самолетов равны");
-    }
+            System.out.println("Длины самолетов равны");
+        }
     }
 }

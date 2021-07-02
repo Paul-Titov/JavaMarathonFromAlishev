@@ -9,19 +9,19 @@ public class Task2 {
 
         Player.info();
 
-        Player player1 = new Player(random1.nextInt(11)+90);
-        Player player2 = new Player(random1.nextInt(11)+90);
-        Player player3 = new Player(random1.nextInt(11)+90);
-        Player player4 = new Player(random1.nextInt(11)+90);
-        Player player5 = new Player(random1.nextInt(11)+90);
+        Player player1 = new Player(random1.nextInt(11) + 90);
+        Player player2 = new Player(random1.nextInt(11) + 90);
+        Player player3 = new Player(random1.nextInt(11) + 90);
+        Player player4 = new Player(random1.nextInt(11) + 90);
+        Player player5 = new Player(random1.nextInt(11) + 90);
         Player.info();
 
-        Player player6 = new Player(random1.nextInt(11)+90);
+        Player player6 = new Player(random1.nextInt(11) + 90);
 
         Player.info();
 
-        Player player7 = new Player(random1.nextInt(11)+90);
-        Player player8 = new Player(random1.nextInt(11)+90);
+        Player player7 = new Player(random1.nextInt(11) + 90);
+        Player player8 = new Player(random1.nextInt(11) + 90);
 
         Player.info();
 
@@ -31,7 +31,7 @@ public class Task2 {
 
         Player.info();
 
-        Player player9 = new Player(random1.nextInt(11)+90);
+        Player player9 = new Player(random1.nextInt(11) + 90);
 
         Player.info();
 
