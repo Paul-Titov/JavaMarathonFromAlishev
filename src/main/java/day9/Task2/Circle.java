@@ -3,7 +3,7 @@ package day9.Task2;
 public class Circle extends Figure {
     private double radius;
 
-    public Circle(int radius, String color) {
+    public Circle(double radius, String color) {
         super(color);
         this.radius = radius;
     }

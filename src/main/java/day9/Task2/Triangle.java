@@ -5,7 +5,7 @@ public class Triangle extends Figure {
     private double b;
     private double c;
 
-    public Triangle (int a, int b, int c, String color) {
+    public Triangle (double a, double b, double c, String color) {
         super(color);
         this.a = a;
         this.b = b;
