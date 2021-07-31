@@ -6,8 +6,8 @@ import java.util.List;
 import static day13.MessageDatabase.addNewMessage;
 
 public class User {
-    String username;
-    List<User> subscriptions;
+    private String username;
+    private List<User> subscriptions;
 
     public User(String username) {
         this.username = username;
@@ -33,10 +33,8 @@ public class User {
     }
 
     public boolean isFriend(User user) {
-        if (this.isSubscribed(user)) {
-            if (user.isSubscribed(this)) {
+        if (this.isSubscribed(user) && user.isSubscribed(this)) {
                 return true;
-            }
         }
         return false;
     }
