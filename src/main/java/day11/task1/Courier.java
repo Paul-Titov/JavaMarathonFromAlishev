@@ -34,7 +34,7 @@ public class Courier implements Worker {
     public void doWork() {
         salary += 100;
         warehouse.setCountDeliveredOrders((warehouse.getCountDeliveredOrders()) + 1);
-        if (warehouse.getCountDeliveredOrders() == 10000) {
+        if (warehouse.getCountDeliveredOrders() % 10000 == 0) {
             bonus();
         }
     }
