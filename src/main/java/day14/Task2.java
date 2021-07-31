@@ -18,12 +18,16 @@ public class Task2 {
             while(scanner.hasNextLine()) {
                 String[] line = scanner.nextLine().split(" ");
                 if (Integer.parseInt(line[1]) < 0) {
-                    System.out.println("Некорректный входной файл");
+//                    System.out.println("Некорректный входной файл");
+                    throw new Exception("Некорректный входной файл");
                 }
                 people.add(line[0]+" "+line[1]);
             }
         } catch (FileNotFoundException e) {
             System.out.println("Файл не найден");
+        }
+        catch (Exception e) {
+            System.out.println(e.getMessage());
         }
         return people;
     }

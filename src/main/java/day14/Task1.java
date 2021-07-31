@@ -15,15 +15,17 @@ public class Task1 {
             Scanner scanner = new Scanner(file);
             int count = 0;
             String[] nums = scanner.nextLine().split(" ");
+            if (nums.length != 10) {
+                throw new Exception("Некорректный входной файл");
+            }
             for (String i : nums) {
                 count++;
                 sum += Integer.parseInt(i);
             }
-            if (count != 10) {
-                System.out.println("Некорректный входной файл");
-            }
         } catch (FileNotFoundException e) {
             System.out.println("Файл не найден");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
         }
         System.out.println(sum);
     }
